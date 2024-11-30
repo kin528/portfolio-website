@@ -1,0 +1,165 @@
+/* Experience Section Styles */
+#experience {
+    background-image: url(images/bg_dim.jpg); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    padding: 60px; /* Add padding to the section */
+    color: #ffffff; /* White text color to stand out against the background */
+}
+
+
+
+#experience h2, #experience p {
+    color: #ffffff; /* Black text color */
+    text-shadow: none; /* Remove glowing effect */
+    font-weight: bold; /* Ensures bold text */
+    -webkit-text-stroke: 1px white; /* White outline around the text */
+    font-size: 30px;
+}
+
+
+
+.experience-bar {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .skill {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+  }
+  
+/* Skill Span */
+.skill span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill span i {
+    font-size: 24px; /* Icon size */
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.skill span:hover i {
+    transform: scale(1.2); /* Icon enlarges on hover */
+}
+
+/* Individual bar colors */
+.c-bar {
+    background-color: #ff5722; /* Deep Orange for C */
+    border-radius: 10px;
+}
+
+.cpp-bar {
+    background-color: #4caf50; /* Green for C++ */
+    border-radius: 10px;
+}
+
+.csharp-bar {
+    background-color: #3f51b5; /* Indigo for C# */
+    border-radius: 10px;
+}
+
+.vs-bar {
+    background-color: #ff9800; /* Amber for Visual Studio */
+    border-radius: 10px;
+}
+
+.vscode-bar {
+    background-color: #03a9f4; /* Light Blue for VS Code */
+    border-radius: 10px;
+}
+
+.html-bar {
+    background-color: #e91e63; /* Pink for HTML */
+    border-radius: 10px;
+}
+
+.css-bar {
+    background-color: #2196f3; /* Blue for CSS */
+    border-radius: 10px;
+}
+
+.js-bar {
+    background-color: #ffc107; /* Yellow for JavaScript */
+    border-radius: 10px;
+}
+
+/* Hover glow effect */
+.skill:hover .bar {
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+/* Scroll-triggered animation */
+.bar {
+    height: 20px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bar.visible {
+    width: var(--skill-level); /* Use CSS custom properties */
+}
+
+/* Hover glow effect */
+.skill:hover .bar {
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+/* Scroll-triggered animation */
+.bar {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bar.visible {
+    width: var(--skill-level); 
+}
+  
+  .c-bar {
+    background-color: #ff33aa; 
+    box-shadow: 0 0 15px rgba(255, 51, 170, 0.8); 
+}
+
+.cpp-bar {
+    background-color: #33ff57; 
+    box-shadow: 0 0 15px rgba(51, 255, 87, 0.8);
+}
+
+.csharp-bar {
+    background-color: #5733ff; 
+    box-shadow: 0 0 15px rgba(87, 51, 255, 0.8); 
+}
+
+.vs-bar {
+    background-color: #ffd700; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); 
+}
+
+.vscode-bar {
+    background-color: #00bfff; 
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); 
+}
+
+.html-bar {
+    background-color: #ff4500; 
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.8); 
+}
+
+.css-bar {
+    background-color: #1e90ff; 
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.8); 
+}
+
+.js-bar {
+    background-color: #f0db4f; 
+    box-shadow: 0 0 15px rgba(240, 219, 79, 0.8); 
+}

@@ -1,0 +1,39 @@
+/* Home Section */
+
+
+  .home {
+    background: #f4f4f9;
+    background-image: url(images/bg_dim.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .home p {
+    text-align: justify;
+    color: #ffffff;
+    font-size: large;
+    margin: 50px auto;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    text-align: left;
+    transform: translateX(20%);
+  }
+  
+  .profile-picture img {
+    width: 150px auto;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0%;
+    border: 5px solid #8db5e2;
+    margin-bottom: 0;
+    transform: translateX(50px);
+  }
+  
